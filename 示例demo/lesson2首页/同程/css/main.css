@@ -1,0 +1,287 @@
+.header {
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	background-color: #3cafdc
+}
+
+.header-title {
+	color: #FFFFFF;
+	display: block;
+	font-size: 18px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 320px;
+}
+
+.left-head {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 40px
+}
+
+.inset_shadow {
+	display: block;
+	overflow: hidden
+}
+
+.header-return {
+	background: url("../images/header-nav.png") no-repeat scroll -44px 0px;
+	display: inline-block;
+	height: 36px;
+	margin: 12px 15px 0px 15px;
+	overflow: hidden;
+	width: 30px;
+}
+
+.right-head {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 44px;
+	width: 38px;
+	padding-right: 5px
+}
+
+.list-btn {
+	background: url("../images/header-nav.png") no-repeat scroll 0 0;
+	height: 40px;
+	width: 25px;
+	display: block;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.content {
+	min-height: 330px;
+	max-width: 900px;
+	margin: 10px auto 5px;
+}
+
+.fn-clear {
+	zoom: 1
+}
+
+.fn-clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+nav {
+	border-top: 1px solid #e4e1da;
+}
+
+nav a {
+	float: left;
+	height: 85px;
+	padding-top: 12px;
+	width: 25%;
+	font-size: 13px;
+	line-height: 30px;
+	text-align: center;
+	-webikit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right: 1px solid #e4e1da;
+	border-bottom: 1px solid #e4e1da;
+	color: #64625f;
+	background: #fff;
+}
+
+nav a:nth-child(4n) {
+	border-right: none;
+}
+
+nav a em, section a em {
+	background: url(../images/navIcon.png) no-repeat 0 0;
+	background-size: 310px 150px;
+}
+
+nav a em {
+	width: 38px;
+	height: 38px;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+}
+
+nav a em.hotel {
+	background-color: #ff7661;
+	background-position: -6px -7px;
+}
+
+nav a em.flight {
+	background-color: #66ccff;
+	background-position: -56px -7px;
+}
+
+nav a em.scenery {
+	background-color: #90cc00;
+	background-position: -105px -7px;
+}
+
+nav a em.selftrip {
+	background-color: #ff9f63;
+	background-position: -155px -7px;
+}
+
+nav a em.dujia {
+	background-color: #77b7ff;
+	background-position: -6px -57px;
+}
+
+nav a em.cruise {
+	background-color: #ffbd5f;
+	background-position: -56px -57px;
+}
+
+nav a em.train {
+	background-color: #56d8c4;
+	background-position: -106px -57px;
+}
+
+nav a em.login {
+	background-color: #ffd33b;
+	background-position: -156px -57px;
+}
+
+section {
+	padding: 0;
+}
+
+section ul li {
+	padding: 10px 5px 0;
+	float: left;
+	width: 50%;
+	-webikit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+section a {
+	height: 65px;
+	background: #fff;
+	box-shadow: -1px 1px 2px #d6d5d5;
+	display: block;
+	width: 100%;
+	color: #ccc;
+	-webikit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 6px;
+	position: relative;
+	font-size: 15px;
+}
+
+section a h1 {
+	font-size: 19px;
+}
+
+section a em {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	width: 60px;
+	height: 65px;
+}
+
+section a.hot em {
+	background-position: -196px 12px;
+}
+
+section a.lower em {
+	background-position: -250px 2px;
+}
+
+section a.locat em {
+	background-position: -194px -45px
+}
+
+section a.groupbuy em {
+	background-position: -252px -66px;
+}
+
+section a.hot h1, section a.lower h1 {
+	color: #ff6e47;
+}
+
+section a.locat h1 ,section a.groupbuy h1 {
+	color: #50c3eb;
+}
+
+footer {
+	background-color: #3cafdc;
+	padding: 7px 0;
+	height: 80px;
+	line-height: 80px;
+	font-family: microsoft yahei;
+}
+
+footer .footer_link {
+	font-size: 12px;
+	line-height: 2em;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+footer .footer_link a {
+	font-size: 12px;
+	color: #fff
+}
+
+footer .footer_link .link_1 {
+	font-size: 12px;
+	margin: 0 8px;
+	color: #fff;
+	line-height: 14px
+	margin: 0 2px;
+}
+
+footer .footer_link .link_2 {
+	margin: 0 9px;
+	color: #fff;
+	line-height: 15px
+	margin-left: 30px;
+}
+
+footer .footer_link .link_3 {
+	color: #fff;
+	line-height: 15px;
+	font-size: 12px
+	margin-left: 6px;
+}
+
+.link_4 {
+	color: #ddd;
+	line-height: 12px;
+	margin: 0 2px;
+}
+
+footer .c_right {
+	color: #006a93;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+}
+
+footer .c_right span, footer .c_right span a {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+footer .tel {
+	display: block;
+	padding-bottom: 10px;
+	line-height: 20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>     
+<html>     
+<head>     
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fixed Positioning Example</title>     
+<meta name="viewport" content="width=device-width, initial-scale=1">     
+<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />     
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>     
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>  
+<style type="text/css">
+.ui-icon-round{ background-image:url(round.png);}
+.ui-icon{ background-size:18px 26px;}
+</style>    
+</head>               
+<body>
+	<div data-role="page">
+    	<div data-role="header" data-position="fixed">
+        	<a href="#">返回</a>    
+            <h1>头部栏</h1>    
+            <a href="#">设置</a>
+        </div>
+		<div data-role="content">
+			<a href="#" data-role="button"  style="margin-top:60px;" data-iconpos="left" data-icon="round">自定义图标在左侧显示</a>
+			<a href="#" data-role="button" data-iconpos="right" data-icon="round">自定义图标在右侧显示</a>
+			<a href="#" data-role="button" data-iconpos="top" data-icon="round">自定义图标在上方显示</a>
+			<a href="#" data-role="button" data-iconpos="bottom" data-icon="round">自定义图标在下方显示</a>
+			<a href="#" data-role="button" data-iconpos="notext" data-icon="round">不显示自定义图标</a>
+		</div>
+        <div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a id="chat" href="#" data-icon="round">微信</a></li>        
+					<li><a id="email" href="#" data-icon="round">通讯录</a></li>        
+					<li><a id="skull" href="#" data-icon="round">找朋友</a></li>        
+					<li><a id="beer" href="#" data-icon="round">设置</a></li>         
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+    </div>
+</body>
+</html>

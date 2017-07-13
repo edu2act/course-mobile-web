@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript">
+	    $(function () {
+		    $('#demo').mobiscroll().date({
+		        theme: 'mobiscroll',
+		        lang: 'zh',
+		        display: 'bottom'
+		    });
+
+		    $('#show').click(function () {
+		        $('#demo').mobiscroll('show');
+		        return false;
+		    });
+
+		    $('#clear').click(function () {
+		        $('#demo').mobiscroll('clear');
+		        return false;
+		    });
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" id="pageone">
+        <div data-role="header">
+            <h1>页眉文本</h1>
+        </div>
+        <div data-role="content"> 
+            <input id="demo" placeholder="Please Select..." />
+			<button id="clear">Clear</button>
+			<button id="show">Show</button>
+        </div>
+        <div data-role="footer">
+            <h1>页脚文本</h1>
+        </div>
+    </div> 
+</body>
+</html>
+

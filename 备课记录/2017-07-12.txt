@@ -1,6 +1,0 @@
-备课时间：2017-07-12 上午
-备课人员：刘孟祎，刘冠军，祁乐，王智娟，刘金梦
-备课场地：C304
-备课内容：
-	[刘孟祎] 认识与下载jQuery Mobile；jQuery Mobile页面结构；页面切换效果；对话框；页面主题化；AmazeUI、Framework7、MUI、SUI框架示例
-        [讨论]   jQuery Mobile框架与其他移动Web开发框架之间的共性

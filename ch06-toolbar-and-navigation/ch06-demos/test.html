@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<style type="text/css">
+		.item-title {padding: 25px 10px; }
+		#fixed-fullscreen-content {margin-top: 0; }
+		.ui-footer {margin-top: 20px; }
+	</style>
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+	<header data-role="header">
+		<h1>jQuery Mobile Demo</h1>
+	</header>
+
+	<div data-role="content">
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#page-1">常见头部栏</a></li>
+			<li><a href="#page-2">使用 CSS 类控制按钮位置的自定义头部栏</a></li>
+			<li><a href="#page-3">导航栏</a></li>
+			<li><a href="#page-4">固定位置的工具栏</a></li>
+			<li><a href="#page-5">固定位置的全屏工具栏</a></li>
+		</ul>
+	</div>
+
+	<footer data-role="footer">
+		<h2>Demo By <a href="http://kayosite.com" target="_blank" style="text-decoration: none; ">Kayo</a></h2>
+	</footer>
+
+</div>
+
+<div data-role="page" id="page-1">
+
+	<div data-role="header">
+		<a data-rel="back" href="#home" data-icon="delete">取消</a>
+		<h1>常见头部栏</h1>
+		<a href="#home" data-icon="check">保存</a>
+	</div>
+
+	<div data-role="content">
+	</div>
+
+	<footer data-role="footer">
+		<h2>Demo By <a href="http://kayosite.com" target="_blank" style="text-decoration: none; ">Kayo</a></h2>
+	</footer>
+
+</div>
+
+<div data-role="page" id="page-2">
+
+	<div data-role="header">
+		<a class= "ui-btn-right" href="#home" data-rel="back" data-icon="delete">取消</a>
+		<h1>使用 CSS 类控制按钮位置的自定义头部栏</h1>
+		<a class="ui-btn-left" href="#home" data-icon="check">保存</a>
+	</div>
+
+	<div data-role="content">
+	</div>
+
+	<footer data-role="footer">
+		<h2>Demo By <a href="http://kayosite.com" target="_blank" style="text-decoration: none; ">Kayo</a></h2>
+	</footer>
+
+</div>
+
+<div data-role="page" id="page-3">
+
+	<div data-role="header">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" class="ui-btn-active">One</a></li>
+				<li><a href="#">Two</a></li>
+				<li><a href="#">Three</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div data-role="content">
+		<a data-rel="back" href="#home" data-role="button">返回首页</a>
+	</div>
+
+	<footer data-role="footer">
+		<h2>Demo By <a href="http://kayosite.com" target="_blank" style="text-decoration: none; ">Kayo</a></h2>
+	</footer>
+
+</div>
+
+<div data-role="page" id="page-4">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#home" data-rel="back" data-icon="delete">取消</a>
+		<h1>固定位置的全屏工具栏</h1>
+	</div>
+
+	<div data-role="content">
+		<ul data-role="listview">
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+			<li>当工具栏滚出页面后通过点击屏幕控制显示或关闭工具栏</li>
+		</ul>
+	</div>
+
+	<footer data-role="footer">
+		<h2>Demo By <a href="http://kayosite.com" target="_blank" style="text-decoration: none; ">Kayo</a></h2>
+	</footer>
+
+</div>
+
+<div data-role="page" id="page-5">
+
+	<div data-role="header" data-position="fixed" data-fullscreen="true">
+		<a href="#home" data-rel="back" data-icon="delete">取消</a>
+		<h1>固定位置的工具栏</h1>
+	</div>
+
+	<div data-role="content">
+		<ul data-role="listview" id="fixed-fullscreen-content">
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>点击屏幕控制显示或关闭工具栏</li>
+			<li>建议缩小浏览器高度以查看效果</li>
+		</ul>
+	</div>
+
+	<footer data-role="footer">
+		<h2>Demo By <a href="http://kayosite.com" target="_blank" style="text-decoration: none; ">Kayo</a></h2>
+	</footer>
+
+</div>
+
+</body> 
+</html>

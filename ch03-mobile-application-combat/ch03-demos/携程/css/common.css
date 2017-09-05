@@ -1,0 +1,33 @@
+﻿html,body,nav,ul,li,h2 {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	min-width: 320px;
+	font: normal 14px/1.5em Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+	color: #000;
+	background: #e7f8ff;
+	overflow-x: hidden;
+}
+
+html,body {
+	height: 100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	border: none
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+h2 a:link,h2 a:visited {
+	color: #fff;
+}

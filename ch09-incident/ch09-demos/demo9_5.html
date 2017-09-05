@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).on("pageinit",function(event){
+        $(window).on("orientationchange",function(event){
+            alert("当前的方向是："+event.orientation);
+          });                   
+        });
+    </script>
+</head>
+<body>
+	<div data-role="page" id="pageone">
+	    <div data-role="header">
+            <h1>orientationchange 事件</h1>
+        </div>
+
+        <div data-role="content">
+            <p>请试着旋转您的设备！</p>
+            <p><b>注释：</b>必须使用移动设备或者移动模拟器来查看该事件的效果。</p>
+        </div>
+
+        <div data-role="footer">
+            <h1>页脚文本</h1>
+        </div>
+	</div> 
+</body>
+</html>

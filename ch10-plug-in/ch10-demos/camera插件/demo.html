@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>camera</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="res/jquery.mobile-1.4.5.min.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'/> 
+    <style type="text/css">
+    .fluid_container {
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 90%;
+        }
+    </style>
+
+    <script src="res/jquery-2.2.2.js"></script>
+    <script src="res/jquery.mobile-1.4.5.min.js"></script>
+    <script type='text/javascript' src='scripts/jquery.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='scripts/camera.min.js'></script> 
+    <script>
+        jQuery(function(){
+            jQuery('#camera_wrap_1').camera({
+                height:'50%',
+                pagination: true,
+                thumbnails: true,
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="images/sanxing.jpg" data-src="images/sanxing.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     Note7黯然离场 三星品牌岌岌可危
+                </div>
+            </div>
+            <div data-thumb="images/zhifubao.jpg" data-src="images/zhifubao.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    支付宝提现收费 说好的免费承诺半年遭“打脸”
+                </div>
+            </div>
+            <div data-thumb="images/wangche.jpg" data-src="images/wangche.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    网约车今天面临的政策难题，可能还是要靠技术化解
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

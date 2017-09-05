@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Amaze UI</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style type="text/css">
+        #mybody{
+            margin: 0 auto;
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+    <div id="mybody">
+        <!--页头-->
+        <header data-am-widget="header" class="am-header am-header-default">
+            <div class="am-header-left am-header-nav">
+                <a href="#left-link" class="">
+                    <i class="am-header-icon am-icon-home"></i>
+                </a>
+            </div>
+            <h1 class="am-header-title">
+                <a href="#title-link" class="">
+                    Amaze UI
+                </a>
+            </h1>
+            <div class="am-header-right am-header-nav">
+                <a href="#doc-oc-demo3" class="" data-am-offcanvas="{target: '#doc-oc-demo3'}">
+                    <i class="am-header-icon am-icon-bars"></i>
+                </a>
+            </div>
+        </header>
+        <!--导航-->
+        <ul class="am-nav am-nav-pills ">
+            <li class="am-active"><a href="#">天气</a></li>
+            <li><a href="#">实景</a></li>
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="#">
+                    我 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <li class="am-dropdown-header">标题</li>
+                    <li><a href="#">我的健康</a></li>
+                    <li class="am-active"><a href="#">穿衣助手</a></li>
+                    <li class="am-disabled"><a href="#">空气果</a></li>
+                    <li class="am-divider"></li>
+                    <li><a href="#">设置</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--图片
+        <img class="am-round" alt="140*140" src="http://file-sheying.sioe.cn/201208/20/CC171535302.jpg" width="40%" height="15%" />-->
+        <!--列表-->
+        <ul class="am-list am-list-striped">
+            <li><a href="test2.html" >南方苦战强降雨 北方下周气温冲30℃</a></li>
+            <li><a href="#">周末北方降雨降温 南方再度迎战强降雨</a></li>
+            <li><a href="#">南方暴雨灾害风险高 江南明起迎连晴天</a></li>
+            <li><a href="#">南方近期雨量超1998年同期 5月仍有4轮雨</a></li>
+        </ul>
+        <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+        <!--评论-->
+        <article class="am-comment">
+            <a href="#link-to-user-home">
+                <img src="images/reindeer.png" alt="" class="am-comment-avatar" width="48" height="48"/>
+            </a>
+            <div class="am-comment-main">
+                <header class="am-comment-hd">
+                  <!--<h3 class="am-comment-title">评论标题</h3>-->
+                  <div class="am-comment-meta">
+                    <a href="#link-to-user" class="am-comment-author">某人</a>
+                    评论于 <time datetime="2016-05-23T04:54:29-07:00" title="2016年5月23日 下午7:54 格林尼治标准时间+0800">2016-5-23 15:30</time>
+                  </div>
+                </header>
+            <div class="am-comment-bd">
+                  这样啊...
+            </div>
+            <footer class="am-comment-footer">
+                <div class="am-comment-actions">
+                    <a href=""><i class="am-icon-thumbs-up"></i></a>
+                    <a href=""><i class="am-icon-thumbs-down"></i></a>
+                    <a href=""><i class="am-icon-reply"></i></a>
+                </div>
+            </footer>
+        </article>
+        <!--侧边栏-->
+        <div id="doc-oc-demo3" class="am-offcanvas">
+            <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+                <div class="am-offcanvas-content">
+                    <p>
+                    北京市<br/>
+                    上海市<br/>
+                    承德市<br/>
+                    香港特别行政区<br/>
+                    </p>
+                    <p><a href="http://music.163.com/#/song?id=385554" target="_blank">网易音乐</a></p>
+                </div>
+            </div>
+        </div>
+        <!--底部工具栏-->
+        <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
+          <ul class="am-navbar-nav am-cf am-avg-sm-4">
+                <li >
+                    <a href="#" class="">
+                        <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/Information.png" alt="消息"/>
+                        <span class="am-navbar-label">消息</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="">
+                        <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/phone.png" alt="呼叫"/>
+                        <span class="am-navbar-label">呼叫</span>
+                    </a>
+                </li>
+                <li data-am-navbar-share>
+                    <a href="#" class="">
+                        <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/share.png" alt="分享"/>
+                        <span class="am-navbar-label">分享</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="">
+                        <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/map.png" alt="地图"/>
+                        <span class="am-navbar-label">地图</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>

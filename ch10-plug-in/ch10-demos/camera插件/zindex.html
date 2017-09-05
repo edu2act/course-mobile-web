@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZAKER</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="res/jquery.mobile-1.4.5.min.css">
+	<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'/> 
+	<style type="text/css">
+		img{
+            height: 120px;}
+        #blser img{
+			width: 66%;
+			height: 180px;
+			display: block;
+			margin: 0 auto;}
+		.ui-grid-a img{
+			width: 60px; height: 60px;}
+		#ly img{
+			width: 60px;
+			height: 60px;}
+		.fluid_container{
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 90%;}
+        .ui-bar-f{
+			color:white;
+			background-color:blue;}
+		p{
+			text-indent: 2em;
+			line-height: 23px;}
+	</style>
+
+    <script src="res/jquery-2.2.2.js"></script>
+    <script src="res/jquery.mobile-1.4.5.min.js"></script>
+    <script type='text/javascript' src='scripts/jquery.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='scripts/camera.min.js'></script> 
+    <script>
+        jQuery(function(){
+            
+            jQuery('#camera_wrap_1').camera({
+                height:'36%',
+                pagination: true,
+                thumbnails: true,
+            });
+        });
+    </script>
+</head>
+<body>
+	<div data-role="page" >
+		<!-- /头部 -->
+		<div data-role="header" data-theme="f">
+			<a href="#" data-role="button" data-icon="home" data-iconpos="notext"></a>
+		    <h1>订阅</h1>
+		    <a href="#" data-role="button" data-icon="search" data-iconpos="notext" data-transition="pop">搜索</a>
+		</div>
+
+		<!-- /内容 -->
+		<div data-role="content">
+			<div class="fluid_container">
+		        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+		            <div data-thumb="images/sanxing.jpg" data-src="images/sanxing.jpg">
+		                <div class="camera_caption fadeFromBottom">
+		                     Note7黯然离场 三星品牌岌岌可危
+		                </div>
+		            </div>
+		            <div data-thumb="images/zhifubao.jpg" data-src="images/zhifubao.jpg">
+		                <div class="camera_caption fadeFromBottom">
+		                    支付宝提现收费 说好的免费承诺半年遭“打脸”
+		                </div>
+		            </div>
+		            <div data-thumb="images/wangche.jpg" data-src="images/wangche.jpg">
+		                <div class="camera_caption fadeFromBottom">
+		                    网约车今天面临的政策难题，可能还是要靠技术化解
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		
+		<!-- /底部 -->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+		        <ul>
+			        <li><a href="#" data-icon="grid">订阅</a></li>
+			        <li><a href="#" data-icon="star">热点</a></li>
+			        <li><a href="#" data-icon="gear">玩乐</a></li>
+			        <li><a href="#" data-icon="check">社区</a></li>
+		        </ul>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

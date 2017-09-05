@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Date of birth</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/mobiscroll.custom-3.0.0-beta6.min.css" type="text/css" />
+    <script src="js/mobiscroll.custom-3.0.0-beta6.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header">
+    <h1>这是我的标题</h1>
+</div>
+<div data-role="content">
+<div class="demo-main-cont demo-comp-datetime demo-display-bottom demo-theme-mobiscroll">
+        <div class="demo-iframe demo-dateofbirth">
+            <!-- Date & Time demo markup -->
+        <input id="demo" placeholder="请选择日期..." />
+
+        <button id="clear" data-inline="true" data-corners="false">Clear</button>
+        <button id="show" data-inline="true" data-corners="false">Show</button>
+        
+        </div>
+    </div>
+</div>
+<div data-role="footer" data-position="fixed">
+    <h1>这是我的尾部</h1>
+</div>
+</div>
+    <script type="text/javascript">
+    $(function () {
+    
+        var currYear = new Date().getFullYear();
+        $('#demo').mobiscroll().date({
+            theme: 'mobiscroll',
+            lang: 'en',
+            display: 'bottom',
+            defaultValue: new Date(new Date().setFullYear(currYear - 20)),
+            max: new Date(),
+            min: new Date(new Date().setFullYear(currYear - 120))
+        });
+
+        $('#show').click(function () {
+            $('#demo').mobiscroll('show');
+            return false;
+        });
+    
+        $('#clear').click(function () {
+            $('#demo').mobiscroll('clear');
+            return false;
+        });
+
+    });
+    </script>
+</body>
+</html>
